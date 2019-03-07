@@ -190,7 +190,7 @@ func TestTailCallSameFn(t *testing.T) {
 	testNoPanicString(t, s)
 }
 
-// TestNoTailCall tests for failures when neither callee nor caller make a tailcall.
+// TestNormalCall tests for failures when neither callee nor caller make a tailcall.
 func TestNormalCall(t *testing.T) {
 	s := `function notailcall() return 5 end
 		return (notailcall())`

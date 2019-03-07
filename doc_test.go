@@ -4,7 +4,7 @@ import (
 	"github.com/Shopify/go-lua"
 )
 
-// This example receives a variable number of numerical arguments and returns their average and sum.
+// ExampleFunction: This example receives a variable number of numerical arguments and returns their average and sum.
 func ExampleFunction(l *lua.State) int {
 	n := l.Top() // Number of arguments.
 	var sum float64
